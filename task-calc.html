@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" id="one" placeholder="first number">
+        <input type="text" id="two" placeholder="second number">
+        <button type="button" onclick="Sum()">+</button>
+        <button type="button" onclick="Sub()">-</button>
+        <button type="button" onclick="Mul()">*</button>
+        <button type="button" onclick="Div()">/</button>
+
+        <p id="result"></p>
+
+    </form>
+    
+    <script>
+
+        function Sum(){
+
+            a=document.getElementById("one").value;
+
+            b=document.getElementById("two").value;
+
+            c=parseFloat(a)+parseFloat(b);
+
+            document.getElementById("result").innerHTML="sum=" + c;
+
+            //alert("sum:"+c);
+        }
+
+        function Sub(){
+
+            a=document.getElementById("one").value;
+
+            b=document.getElementById("two").value;
+
+            c=parseFloat(a)-parseFloat(b);
+
+            document.getElementById("result").innerHTML="Subtraction=" + c;
+
+            //alert("subtraction:"+c);
+        }
+
+        function Mul(){
+
+            a=document.getElementById("one").value;
+
+            b=document.getElementById("two").value;
+
+            c=parseFloat(a)*parseFloat(b);
+
+            document.getElementById("result").innerHTML="multipication=" + c;
+
+            //alert("Multification:"+c);
+        }
+
+         function Div(){
+
+            a=document.getElementById("one").value;
+
+            b=document.getElementById("two").value;
+
+            c=parseFloat(a)/parseFloat(b);
+
+            document.getElementById("result").innerHTML="Division=" + c;
+
+            //alert("Division:"+c);
+           }
+
+
+    </script>
+</body>
+</html>
